@@ -119,24 +119,12 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-synckit@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.5.0.tgz#957368df5b13d3b449cc895c5d76c2a90dadf454"
-  integrity sha512-nktfsyZgfTzCvRn/9bFqGjs5BMspOsqtYp8bDqfzzTIoP7IHmmxqpAyQm260+AmANchmfkDZj/koOF2EvCuEow==
-  dependencies:
-    tslib "^2.3.1"
-
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
-
-tslib@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
-  integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
 
 typescript@^4.4.2:
   version "4.4.2"

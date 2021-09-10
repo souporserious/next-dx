@@ -13,7 +13,6 @@
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "fast-glob": "^3.2.7",
-    "synckit": "^0.5.0"
+    "fast-glob": "^3.2.7"
   }
 }

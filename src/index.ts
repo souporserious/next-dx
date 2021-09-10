@@ -1,26 +1,18 @@
-import { createSyncFn } from 'synckit'
-
-const syncFn = createSyncFn(require.resolve('./worker'))
+import init from './init'
 
 type PluginOptions = {
   files: {
     name: string
-    title: string
     path: string
+    resolve: (filePaths: any[]) => Promise<any>
   }[]
 }
 
-function plugin(options: PluginOptions): (config) => any {
-  const files = syncFn(options)
-  console.log({
-    options,
-    files,
-  })
+export = function plugin(options: PluginOptions): (config) => any {
+  init(options)
   return function withConfig(nextConfig = {}) {
     return {
       ...nextConfig,
     }
   }
 }
-
-export = plugin
