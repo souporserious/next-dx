@@ -1,34 +1,24 @@
+import { createSyncFn } from 'synckit'
+
+const syncFn = createSyncFn(require.resolve('./worker'))
+
 type PluginOptions = {
-  files: []
+  files: {
+    name: string
+    title: string
+    path: string
+  }[]
 }
 
 function plugin(options: PluginOptions): (config) => any {
+  const files = syncFn(options)
+  console.log({
+    options,
+    files,
+  })
   return function withConfig(nextConfig = {}) {
     return {
       ...nextConfig,
-      exportPathMap: async function (
-        defaultPathMap,
-        { dev, dir, outDir, distDir, buildId }
-      ) {
-        console.log(defaultPathMap)
-        return defaultPathMap
-        // return {
-        //   '/': { page: '/' },
-        //   '/about': { page: '/about' },
-        //   '/p/hello-nextjs': {
-        //     page: '/post',
-        //     query: { title: 'hello-nextjs' },
-        //   },
-        //   '/p/learn-nextjs': {
-        //     page: '/post',
-        //     query: { title: 'learn-nextjs' },
-        //   },
-        //   '/p/deploy-nextjs': {
-        //     page: '/post',
-        //     query: { title: 'deploy-nextjs' },
-        //   },
-        // }
-      },
     }
   }
 }
