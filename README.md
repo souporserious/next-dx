@@ -1,3 +1,7 @@
+## ⚠️ Currently under development, not ready for use yet
+
+This library is currently unstable and the API is in flux. It is being worked on in the open for better exposure, please feel free to file an issue if you have any questions or suggestions. As of right now, packages aren't published yet and documentation may be lacking or stale.
+
 # next-dx
 
 Enhance NextJS development with utilities for local and remote content.
