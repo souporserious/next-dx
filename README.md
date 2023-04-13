@@ -4,7 +4,7 @@ This library is currently unstable and the API is in flux. It is being worked on
 
 # next-dx
 
-Enhance NextJS development with utilities for local and remote content.
+Enhance Next.js development with utilities for local and remote content.
 
 ## Features
 
